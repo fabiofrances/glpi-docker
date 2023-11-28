@@ -1,6 +1,13 @@
 # How to configuration GLPI 10 using Docker
 
-This repositorio is intended to guide in a basic way to use GLPI in your environment using containers.
+This repository is intended to guide in a basic way to use GLPI in your environment using docker containers and images.
+
+If you want to create your image, follow the steps below, otherwise clone this repository and run the command below in the project root folder
+
+> `` docker compose up -d ``
+
+* Note
+> You must have installed docker on your local machine or server
 
 ### Features and Setps: 
 
@@ -55,3 +62,19 @@ Download GLPI Version on  ([https://glpi-project.org/downloads](https://glpi-pro
 
 ### 3.  Create and build image php:apache-bookworm for GLPI
 
+
+In this step we will need to create a file called Dockerfile.yml
+
+> Create file on the root folder in your project.
+
+This file will be responsible for creating the image and installing the extensions necessary to run GLPI.
+
+A. Create folders:
+- glpi
+- files
+- env
+
+B. Download glpi version and extract files into the folder name:  "glpi"
+
+C. 
+ 
